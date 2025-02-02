@@ -1,0 +1,137 @@
+:root{
+    --color1: #274c74;
+    --color2: #140F2D;
+    --color3: #2c7799;
+}
+
+main{
+    padding-top: 0;
+}
+
+section.curso-outdoor{
+    margin-left: -10vw;
+    width: 100vw;
+    height: 88vh;
+    background-image: url(../../../images/cursos/Analise-e-Desenvolvimento-de-Sistemas_DCStudio_Freepik-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    background-attachment: fixed;
+}
+
+section.curso-outdoor .black-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+section.curso-outdoor h1{
+    font-size: 46px;
+}
+
+section.curso-outdoor p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+section.curso-outdoor a{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.curso-outdoor a img{
+    width: 26px;
+}
+
+section.curso-outdoor .veja-mais{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+section.curso-outdoor .veja-mais img{
+    transform: rotate(90deg);
+    width: 22px;
+}
+
+section.curso-info{
+    padding-top: 13vh;
+    font-size: 18px;
+}
+
+section.curso-info h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+section.curso-info h2{
+    margin: 30px 0 10px 0;
+}
+
+section.curso-info p{
+    margin-bottom: 10px;
+    line-height: 1.25em;
+    text-indent: 25px;
+}
+
+section.curso-info ul{
+    margin-left: 45px;
+}
+
+section.curso-info ul li{
+    margin-bottom: 5px;
+}
+
+section.coordenador{
+    margin-top: 10vh;
+    padding: 15px 40px;
+    background-color: rgba(232, 232, 232, 0.8);
+    box-shadow: .8px .8px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+section.coordenador h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+section.coordenador .coordenador-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.coordenador .coordenador-container img{
+    border-radius: 6px;
+    margin-right: 35px;
+}
+
+section.coordenador .coordenador-container .coordenador-info{
+    font-size: 18px;
+}
+
+section.coordenador .coordenador-container .coordenador-info h2{
+     font-size: 26px;
+     margin-bottom: 10px;
+}
+section.coordenador .coordenador-container .coordenador-info p{
+    margin-top: 4px;
+}
+
+section.coordenador .coordenador-container .coordenador-info p strong{
+    font-size: 20px;
+}

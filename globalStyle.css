@@ -1,0 +1,213 @@
+:root{
+    --color1: #274c74;
+    --color2: #140F2D;
+}
+
+body::-webkit-scrollbar {
+    width: 9px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(186, 186, 186);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    max-width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+
+.link-button{
+    display: block;
+    width: max-content;
+    margin: auto;
+    padding: 14px 32px;
+    border-radius: 8px;
+    background-color: var(--color1);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all .25s;
+    box-shadow: .6px .6px 3px rgba(0, 0, 0, 0.5);
+}
+
+.link-button:hover{
+    background-color: var(--color2);
+}
+
+
+
+
+header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+    padding: 0 50px;
+    background-color: var(--color1);
+    box-shadow: .8px .8px 8px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+header img{
+    max-width: 10vw;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    display: block;
+    margin: 5vh 12px 0 12px;
+}
+
+nav ul li a, nav ul li{
+    color: white;
+    text-decoration: none;
+    transition: all .2s;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: var(--color2);
+}
+
+nav ul li.menu-cursos{
+    margin: 0 12px;
+    position: relative;
+    padding: 5vh 0;
+}
+
+nav ul li.menu-cursos ul.submenu-curso{
+    position: absolute;
+    background-color: var(--color1);
+    width: max-content;
+    box-shadow: .8px .8px 8px rgba(0, 0, 0, 0.6);
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+nav ul li.menu-cursos:hover ul.submenu-curso{
+    display: flex;
+}
+
+nav ul li.menu-cursos ul.submenu-curso li{
+    margin-top: 5px;
+    transition: all .25s;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li.menu-cursos ul.submenu-curso li:first-of-type{
+    margin-top: 0;
+}
+
+nav ul li.menu-cursos ul.submenu-curso li:hover{
+    background-color: var(--color2);
+}
+
+nav ul li.menu-cursos ul.submenu-curso li a{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    height: 100%;
+}
+
+nav ul li.menu-cursos ul.submenu-curso li a:hover{
+    color: white;
+}
+
+main{
+    margin-top: 12vh;
+    min-height: 90vh;
+    padding: 50px 10vw;
+}
+
+
+footer{
+    background-color: var(--color1);
+    color: white;
+    padding: 25px;
+}
+
+footer div.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    
+}
+
+footer div.footer-container ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div.footer-container ul div{
+    margin: 10px 40px;
+}
+
+footer div.footer-container ul div h3{
+    font-size: 22px;
+}
+
+footer div.footer-container ul li{
+    display: block;
+    list-style: none;
+    margin: 8px 0;
+}
+
+footer div.footer-container ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+footer div.footer-container ul li a:hover{
+    color: var(--color2);
+}
+
+footer div.image-footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer div.image-footer-container img{
+    margin: 0 12px;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+@media (max-width: 1080px) {
+    *{
+        font-size: 14px;
+    }
+}
